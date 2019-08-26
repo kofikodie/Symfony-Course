@@ -1,0 +1,113 @@
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP Warning:  Uncaught ErrorException: Warning: require(/var/www/webapp/src/Controller/../app/autoload.php): failed to open stream: No such file or directory in /var/www/webapp/src/Controller/DefaultController.php:20
+Stack trace:
+#0 /var/www/webapp/src/Controller/DefaultController.php(20): require()
+#1 [internal function]: spl_autoload_call('App\\Controller\\...')
+#2 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\Controller\\...')
+#3 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1566555781)
+#5 /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(Object(Symfony\Component\Config\Resource\ReflectionClassResource in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP Fatal error:  Symfony\Component\Debug\DebugClassLoader::main(): Failed opening required '/var/www/webapp/src/Controller/../app/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:27 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP Warning:  Uncaught ErrorException: Warning: require(/app/autoload.php): failed to open stream: No such file or directory in /var/www/webapp/src/Controller/DefaultController.php:20
+Stack trace:
+#0 /var/www/webapp/src/Controller/DefaultController.php(20): require()
+#1 [internal function]: spl_autoload_call('App\\Controller\\...')
+#2 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\Controller\\...')
+#3 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1566555781)
+#5 /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(Object(Symfony\Component\Config\Resource\ReflectionClassResource), 1566555781)
+#6 /var/www/webapp in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP Fatal error:  Symfony\Component\Debug\DebugClassLoader::main(): Failed opening required '/app/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:13:46 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP Warning:  Uncaught ErrorException: Warning: require(/app/autoload.php): failed to open stream: No such file or directory in /var/www/webapp/src/Controller/DefaultController.php:20
+Stack trace:
+#0 /var/www/webapp/src/Controller/DefaultController.php(20): require()
+#1 [internal function]: spl_autoload_call('App\\Controller\\...')
+#2 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(105): ReflectionClass->__construct('App\\Controller\\...')
+#3 /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php(52): Symfony\Component\Config\Resource\ReflectionClassResource->computeHash()
+#4 /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php(34): Symfony\Component\Config\Resource\ReflectionClassResource->isFresh(1566555781)
+#5 /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php(99): Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh(Object(Symfony\Component\Config\Resource\ReflectionClassResource), 1566555781)
+#6 /var/www/webapp in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP Fatal error:  Symfony\Component\Debug\DebugClassLoader::main(): Failed opening required '/app/autoload.php' (include_path='.:/opt/php72/lib/php') in /var/www/webapp/src/Controller/DefaultController.php on line 20
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP Stack trace:
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   1. {main}() /var/www/webapp/public/index.php:0
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   2. App\Kernel->handle() /var/www/webapp/public/index.php:25
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   3. App\Kernel->boot() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:193
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   4. App\Kernel->initializeContainer() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:133
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   5. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/http-kernel/Kernel.php:486
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   6. Symfony\Component\Config\ConfigCache->isFresh() /var/www/webapp/vendor/symfony/config/ConfigCache.php:60
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   7. Symfony\Component\Config\Resource\SelfCheckingResourceChecker->isFresh() /var/www/webapp/vendor/symfony/config/ResourceCheckerConfigCache.php:99
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   8. Symfony\Component\Config\Resource\ReflectionClassResource->isFresh() /var/www/webapp/vendor/symfony/config/Resource/SelfCheckingResourceChecker.php:34
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP   9. Symfony\Component\Config\Resource\ReflectionClassResource->computeHash() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:52
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  10. ReflectionClass->__construct() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  11. spl_autoload_call() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  12. Symfony\Component\Debug\DebugClassLoader->loadClass() /var/www/webapp/vendor/symfony/config/Resource/ReflectionClassResource.php:105
+[23-Aug-2019 14:14:03 Asia/Riyadh] PHP  13. include() /var/www/webapp/vendor/symfony/debug/DebugClassLoader.php:159

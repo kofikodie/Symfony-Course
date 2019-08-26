@@ -1,0 +1,18 @@
+[22-Aug-2019 16:39:52 Asia/Riyadh] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) in /var/www/webapp/src/Services/KernelResponseListener.php:7
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Services\\Ke...')
+#1 [internal function]: spl_autoload_call('App\\Services\\Ke...')
+#2 /var/www/webapp/vendor/symfony/config/Resource/ClassExistenceResource.php(78): class_exists('App\\Services\\Ke...')
+#3 /var/www/webapp/vendor/symfony/dependency-injection/ContainerBuilder.php(353): Symfony\Component\Config\Resource\ClassExistenceResource->isFresh(0)
+#4 /var/www/webapp/vendor/symfony/dependency-injection/Loader/FileLoader.php(151): Symfony\Component\DependencyInjection\ContainerBuilder->getReflectionClass('App\\Services\\Ke...')
+#5 /var/www/webapp/vendor/symfony/dependency-injection/Loader/FileLoader.php(57): Symfony\Component\DependencyInjection\Loader\FileLoader->findClasses('App\\', '../src/*', Array)
+#6 /var/www/webapp/vendor/s in /var/www/webapp/src/Services/KernelResponseListener.php on line 7
+[22-Aug-2019 16:40:08 Asia/Riyadh] PHP Fatal error:  Uncaught Symfony\Component\Debug\Exception\FatalThrowableError: syntax error, unexpected ')', expecting variable (T_VARIABLE) in /var/www/webapp/src/Services/KernelResponseListener.php:7
+Stack trace:
+#0 [internal function]: Symfony\Component\Debug\DebugClassLoader->loadClass('App\\Services\\Ke...')
+#1 [internal function]: spl_autoload_call('App\\Services\\Ke...')
+#2 /var/www/webapp/vendor/symfony/config/Resource/ClassExistenceResource.php(78): class_exists('App\\Services\\Ke...')
+#3 /var/www/webapp/vendor/symfony/dependency-injection/ContainerBuilder.php(353): Symfony\Component\Config\Resource\ClassExistenceResource->isFresh(0)
+#4 /var/www/webapp/vendor/symfony/dependency-injection/Loader/FileLoader.php(151): Symfony\Component\DependencyInjection\ContainerBuilder->getReflectionClass('App\\Services\\Ke...')
+#5 /var/www/webapp/vendor/symfony/dependency-injection/Loader/FileLoader.php(57): Symfony\Component\DependencyInjection\Loader\FileLoader->findClasses('App\\', '../src/*', Array)
+#6 /var/www/webapp/vendor/s in /var/www/webapp/src/Services/KernelResponseListener.php on line 7
